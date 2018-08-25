@@ -1,0 +1,1 @@
+python pascalvoc.py -gtformat xyrb -detformat xyrb
