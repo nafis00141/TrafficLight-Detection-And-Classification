@@ -1,6 +1,7 @@
 # Traffic Light Detection And Classification
 A Better And Faster Deep Learning Approach to Trafﬁc Lights: Detection and Classiﬁcation
 
+## AP AND Precision x Recall curve:
 Download groundtruths and detections [Link](https://drive.google.com/file/d/1KZBb6pCyMLO757g5WV_ADTFtwGaW3bT8/view?usp=sharing)
 unzip it and store it in TL-Detection-Metrics/Object-Detection-Metrics-master folder.
 
