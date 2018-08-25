@@ -9,6 +9,6 @@ detections format: <class_name> <confidence> <left> <top> <right> <bottom>.
  
 run the comand.bat
 
-![alt text](https://raw.githubusercontent.com/nafis00141/TL-Detection-And-Classification/images for readme//map.PNG)
+![alt text](https://github.com/nafis00141/TL-Detection-And-Classification/blob/master/images%20for%20readme/map.PNG)
 
 
