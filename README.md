@@ -5,6 +5,7 @@ Download groundtruths and detections [Link](https://drive.google.com/file/d/1KZB
 unzip it and store it in TL-Detection-Metrics/Object-Detection-Metrics-master folder.
 
 Groundtruths format: `<class_name> <left> <top> <width> <height>` .
+
 Detections format: `<class_name> <confidence> <left> <top> <right> <bottom>`.
  
 run the comand.bat
