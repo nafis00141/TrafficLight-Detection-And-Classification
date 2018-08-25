@@ -23,10 +23,10 @@ Download [Bosch Small Traffic Lights Dataset and scripts](https://github.com/bos
 
 run the command: `python yolov3_annotation_from_yaml_448_448_make.py train.yaml obj` .
 
-It will create training data and annotation for darknet. Move it to darknet/data
+It will create training data and annotation for darknet. Move it to `darknet\data\`.
 
 * Create file `obj.names` in the directory `darknet\data\` and write traffic_light
-* Create file `obj.data` in the directory `build\darknet\x64\data\`, containing (where **classes = number of objects**):
+* Create file `obj.data` in the directory `darknet\data\`, containing (where **classes = number of objects**):
   ```
   classes= 1
   train  = data/train.txt
