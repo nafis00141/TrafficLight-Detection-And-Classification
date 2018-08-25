@@ -17,6 +17,7 @@ edit Makefile
   
 Just do `make` in the darknet directory.
 
+download [cfg](https://github.com/AlexeyAB/darknet) and the trained [weight](https://github.com/AlexeyAB/darknet). Move the cgf file to the cfg folder and the weight file to the backup folder
 
 
 ## AP AND Precision x Recall curve:
