@@ -6,7 +6,7 @@ Created on Sat Jul 28 01:19:40 2018
 
 Example usage:
     python groundtruth_file_and_image.py input_yaml foldername
-    python groundtruth_file_and_image.py t.yaml ground_truths images
+    python groundtruth_file_and_image.py t.yaml ground_truths_images
 """
 
 import sys
