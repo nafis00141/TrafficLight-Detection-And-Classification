@@ -65,5 +65,7 @@ run the command: `python pascalvoc.py -gtformat xyrb -detformat xyrb`
 
 ## References
 Dataset https://github.com/bosch-ros-pkg/bstld
+
 Darknet https://github.com/AlexeyAB/darknet
-forked and modified from https://github.com/rafaelpadilla/Object-Detection-Metrics
+
+For detection metrics forked and modified from https://github.com/rafaelpadilla/Object-Detection-Metrics
