@@ -43,6 +43,14 @@ It will create training data and annotation for darknet. Move it to `darknet\dat
 
 
 ## AP AND Precision x Recall curve:
+Download [Bosch Small Traffic Lights Dataset and scripts](https://github.com/bosch-ros-pkg/bstld). Unzip dataset and go to test folder and copy [groundtruth_file_and_image.py](https://github.com/nafis00141/TL-Detection-And-Classification/blob/master/groundtruth_file_and_image.py). Create 2 folders for groundtruths and images.  
+
+run the command: `python groundtruth_file_and_image.py input_yaml FolderNameForGroundTruths FolderNameForImages`
+
+this will generate GroundTruths and Images for testing from Test Data
+
+#### Or
+
 Download groundtruths and detections [Link](https://drive.google.com/file/d/1KZBb6pCyMLO757g5WV_ADTFtwGaW3bT8/view?usp=sharing)
 unzip it and store it in TL-Detection-Metrics/Object-Detection-Metrics-master folder.
 
@@ -53,12 +61,6 @@ Detections format: `<class_name> <confidence> <left> <top> <right> <bottom>`.
 run the command: `python pascalvoc.py -gtformat xyrb -detformat xyrb`
 
 ![alt text](https://github.com/nafis00141/TL-Detection-And-Classification/blob/master/images%20for%20readme/map.PNG)
-
-Download [Bosch Small Traffic Lights Dataset and scripts](https://github.com/bosch-ros-pkg/bstld). Unzip dataset and go to test folder and copy [groundtruth_file_and_image.py](https://github.com/nafis00141/TL-Detection-And-Classification/blob/master/groundtruth_file_and_image.py). Create 2 folders for groundtruths and images.  
-
-run the command: `python groundtruth_file_and_image.py input_yaml FolderNameForGroundTruths FolderNameForImages`
-
-this will generate GroundTruths and Images for testing from Test Data
 
 
 ## References
