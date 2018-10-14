@@ -17,7 +17,7 @@ edit Makefile
   
 Just do `make` in the darknet directory.
 
-download [cfg](https://drive.google.com/open?id=1s-PGEHxfjsPDdL9rLTyh3MaEeRnRFiOn) and the trained [weight](https://drive.google.com/open?id=1LnzLB9daUyPD6B3QuMUU-CFaXCJDFjtA). Move the cfg file to the cfg folder and the weight file to the backup folder in darknet
+download [cfg](https://github.com/nafis00141/TrafficLight-Detection-And-Classification/blob/master/yolo-obj_TL_final.cfg) and the trained [weight](https://drive.google.com/open?id=1LnzLB9daUyPD6B3QuMUU-CFaXCJDFjtA). Move the cfg file to the cfg folder and the weight file to the backup folder in darknet
 
 Download [Bosch Small Traffic Lights Dataset and scripts](https://github.com/bosch-ros-pkg/bstld). Unzip dataset and go to train folder create a folder name obj
 
