@@ -1,5 +1,4 @@
-# Traffic Light Detection And Classification
-A Better And Faster Deep Learning Approach to Trafﬁc Lights: Detection and Classiﬁcation
+# A Better & Faster Deep Learning Approach to Traﬃc Lights And Car Brake-Light: Detection and Classiﬁcation
 
 ## Detection
 
@@ -9,38 +8,34 @@ Download [Darknet (neural network framework for object detection)](https://githu
 edit Makefile
   * `GPU=1`
   * `CUDNN=1`
-  * `CUDNN_HALF=1` (if using NVIDIA Tesla V100)
-  * `OPENCV=1` 
+  * `CUDNN_HALF=1` (if using NVIDIA Tesla V100 else set it to 0)
+  * `OPENCV=1`
   * `DEBUG=1`
   * `OPENMP=1` 
   * `LIBSO=1`
   
 Just do `make` in the darknet directory.
 
-download [cfg](https://github.com/nafis00141/TrafficLight-Detection-And-Classification/blob/master/yolo-obj_TL_final.cfg) and the trained [weight](https://drive.google.com/open?id=1LnzLB9daUyPD6B3QuMUU-CFaXCJDFjtA). Move the cfg file to the cfg folder and the weight file to the backup folder in darknet
+# Traffic Light 
 
-Download [Bosch Small Traffic Lights Dataset and scripts](https://github.com/bosch-ros-pkg/bstld). Unzip dataset and go to train folder create a folder name obj
+download [cfg](https://github.com/nafis00141/TrafficLight-Detection-And-Classification/blob/master/yolo-obj_TL_final.cfg) and the trained [weight](https://drive.google.com/open?id=1LnzLB9daUyPD6B3QuMUU-CFaXCJDFjtA). Move the `cfg` file to the `cfg` folder and the `weight` file to the `backup` folder in darknet directory.
 
-run the command: `python yolov3_annotation_from_yaml_448_448_make.py train.yaml obj` .
 
-It will create training data and annotation for darknet. Move it to `darknet\data\`.
-
-* Create file `obj.names` in the directory `darknet\data\` and write traffic_light
+* Create file `obj.names` in the directory `darknet\data\`, containing
+  ```
+  traffic_light
+  ```
 * Create file `obj.data` in the directory `darknet\data\`, containing (where **classes = number of objects**):
   ```
   classes= 1
-  train  = data/train.txt
+  train  = 
   valid  = 
   names = data/obj.names
   backup = backup/
   ```
-* Create file `train.txt` in directory `darknet\data\`, with filenames of images for training each filename in new line example:
-  ```
-  data/obj/1.png
-  data/obj/2.png
-  data/obj/3.png
-  ```
-
+  
+  
+-------------------------------------------------------------------------------------------------------------
 
 ## AP AND Precision x Recall curve:
 Download [Bosch Small Traffic Lights Dataset and scripts](https://github.com/bosch-ros-pkg/bstld). Unzip dataset and go to test folder and copy [groundtruth_file_and_image.py](https://github.com/nafis00141/TL-Detection-And-Classification/blob/master/groundtruth_file_and_image.py). Create 2 folders for groundtruths and images.  
